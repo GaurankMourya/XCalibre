@@ -1,0 +1,205 @@
+*{box-sizing: border-box;}
+
+body {
+    height: min-content;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body nav {
+    position: fixed;
+    top: 0;
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    z-index: 2;
+}
+
+.nav-logo {
+    height: 90%;
+    width: max-content;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.links-routes{
+    height: 90%;
+    width: 35vw;
+    margin-left: 25vw;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links-routes a{
+    text-decoration: none;
+    color: darkolivegreen;
+}
+.links-routes a:hover{
+    text-decoration: underline;
+    color: rgb(143, 196, 53);
+}
+
+.user-profile{
+    margin-left: 5vw;
+}
+
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    height: 90%;
+    width: 40%;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.intro{
+  height: 20vh;
+  width: 95%;
+  /* background-color: aquamarine; */
+  margin-top: 12vh;
+}
+.intro h2{
+  color: #212121;
+}
+.intro p{
+  color: #555;
+}
+.home-content{
+  height: 55vh;
+  width: 90%;
+}
+.home-content p{
+  width: 90%;
+  color: #555;
+}
+.work{
+  margin-top: 5vh;
+  height: 50vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px #55555556;
+}
+.imgs{
+  height: 25vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.imgs img{
+  height: 150px;
+}
+.cptn{
+  width: 90%;
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer{
+  border-top: 1.5px solid #555;
+  width: 90%;
+  height: 5vh;
+  margin-top: 3vh;  
+  color: #555;
+}
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 60vw;
+    position: relative;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+.donation-methods{
+    height: 45vh;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.food,
+.money{
+  height: 95%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+.food img,
+.money img{
+  height: 90%;
+}
+.food a,
+.money a{
+  margin-top: 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: darkolivegreen;
+}

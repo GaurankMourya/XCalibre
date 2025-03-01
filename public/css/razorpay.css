@@ -1,0 +1,49 @@
+body {
+    height: min-content;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 90%;
+    width: max-content;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.links-routes{
+    height: 90%;
+    width: 35vw;
+    margin-left: 25vw;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links-routes a{
+    text-decoration: none;
+    color: darkolivegreen;
+}
+.links-routes a:hover{
+    text-decoration: underline;
+    color: rgb(143, 196, 53);
+}
+
+.user-profile{
+    margin-left: 5vw;
+}
+.container{
+    margin-top: 15vh;
+}
