@@ -16,12 +16,15 @@ Route::post('/create-payment', [PaymentController::class, 'createPayment']);
 Route::get('/payment-success', function () {
     return "Payment Successful";
 });
+
 Route::get('/payment-failed', function () {
     return "Payment Failed";
 });
+
 Route::get('/payment', function () {
     return view('payment');
 });
+
 Route::post('/create-payment', [PaymentController::class, 'handlePayment']);
 
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register.form');
@@ -48,5 +51,4 @@ Route::get('/donate', [DonationController::class, 'showDonationForm']); // Show 
 Route::post('/donate', [DonationController::class, 'store'])->name('donation'); // Store donation data
 Route::get('/donations', [DonationController::class, 'showDonations']); // Show all donations
 Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
-
 Route::get('/profile', [DonationController::class, 'showProfile'])->name('profile');
